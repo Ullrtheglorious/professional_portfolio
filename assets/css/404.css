@@ -1,0 +1,85 @@
+.bg {
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    
+    background: url('../images/misty.jpg') no-repeat center center;
+    background-size: cover;
+
+    transform: scale(1.1);
+  }
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10vw;
+  height: 100vh;
+  display: flex;
+  background: mix(black, #3B403A, 70%);
+  overflow: hidden;
+}
+a {
+    font-size: .2em;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+svg {
+  display: none;
+}
+
+.distortion {
+  margin: auto;
+  text-align: center;
+  animation: transform 2.5s steps(10) infinite, glitch 3.2s infinite;
+  color: #ffffff;
+  
+  
+}
+
+@keyframes glitch {
+  45% {
+    filter: none;
+  }
+  46% {
+    filter: url(#dist-01);
+  }
+  47% {
+    filter: url(#dist-02);
+  }
+  48% {
+    filter: url(#dist-03);
+  }
+  50% {
+    filter: none;
+  }
+  95% {
+    filter: none;
+  }
+  96% {
+    filter:  url(#dist-02);
+  }
+  97% {
+    filter:  url(#dist-04);
+  }
+}
+
+@keyframes transform {
+  0% {
+    transform: translate(-5%, -5%) skew(-10deg) scale(1.05);
+  }
+  1% {
+    transform: none;
+  }
+  88% {
+    transform: none;
+  }
+  89% {
+    transform: translate(5%, 10%) scale(1.05);
+  }
+  90% {
+    transform: none;
+  }
