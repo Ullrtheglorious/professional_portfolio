@@ -4,49 +4,52 @@
     <title>Corey Richard</title>
     <link rel="icon" type="image/png" href="assets/images/icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <script src="assets/js/script.js"></script>
 </head>
 <body>
+    
+    <div class="bg"></div>
     <div class="container">
-        <div class="hex hex-1 hex-gap">
+        <div class="hex hex-1 hex-gap" id="animate2">
             <div class="inner">
                 <h4>HOME</h4>
                 <hr />
                 <p>Take me Back!</p>
             </div>
-            <a href="#"></a>
+            <a href="#"onclick="reset()"></a>
             <div class="corner-1"></div>
             <div class="corner-2"></div>
         </div>
 <!-- HEX ONE ------------------------------- !-->
-        <div class="hex hex-2">
+        <div class="hex hex-2" id="animate">
             <div class="inner">
                 <h4>ABOUT ME</h4>
                 <hr />
                 <p>Want to know more about me?</p>
             </div>
-            <a href="#"></a>
+            <a href="#"onclick="myMove()"></a>
             <div class="corner-1"></div>
             <div class="corner-2"></div>
         </div>
     
 <!-- HEX ONE ------------------------------- !-->
 
-        <div class="hex hex-3">
+        <div class="hex hex-3" id="animate3" >
             <div class="inner">
                 <h4>CONTACT ME</h4>
                 <hr />
                 <p>Lets talk about Jobs!</p>
             </div>
-            <a href="#"></a>
+            <a href="#"onclick="myMove()"></a>
             <div class="corner-1"></div>
             <div class="corner-2"></div>
         </div>
     
 <!-- HEX ONE ------------------------------- !-->
 
-        <div class="hex" style="background-image: url(assets/images/witcher3.jpg);">
+        <div class="hex trans" style="background-image: url(assets/images/witcher3.jpg);">
                 <div class="inner2">
                     <h4>RPG Game</h4>
                     <hr />
@@ -59,7 +62,7 @@
 
 <!-- HEX ONE ------------------------------- !-->
 
-        <div class="hex" style="background-image: url(assets/images/viking.jpg);">
+        <div class="hex trans" style="background-image: url(assets/images/viking.jpg);">
                 <div class="inner2">
                     <h4>Hangman Game</h4>
                     <hr />
@@ -70,16 +73,16 @@
             <div class="corner-2"></div>
         </div>
 
-<!-- HEX ONE ------------------------------- !-->
+<!-- keep blank until needed ------------------------------- !-->
 
-
-
-        <div class="hex" style="background: transparent;">
+        <div class="hex trans" style="background: transparent;">
             <div class="corner-1"></div>
             <div class="corner-2"></div>
         </div>
-    
-        <div class="hex" style="background-image: url(assets/images/mythical.jpg);">
+
+<!-- HEX ONE ------------------------------- !-->
+
+        <div class="hex trans" style="background-image: url(assets/images/mythical.jpg);">
                 <div class="inner2">
                     <h4>Trivia Game</h4>
                     <hr />
@@ -92,7 +95,7 @@
 
 <!-- HEX ONE ------------------------------- !-->
 
-        <div class="hex hex-gap" style="background: transparent;">
+        <div class="hex hex-gap trans" style="background: transparent;">
             
             <div class="corner-1"></div>
             <div class="corner-2"></div>
@@ -100,7 +103,7 @@
 
 <!-- HEX ONE ------------------------------- !-->
 
-        <div class="hex" style="background-image: url(assets/images/api.jpg);">
+        <div class="hex trans" style="background-image: url(assets/images/api.jpg);">
             <div class="inner2">
                     <h4>Giphy API</h4>
                     <hr />
@@ -110,50 +113,65 @@
             <div class="corner-1"></div>
             <div class="corner-2"></div>
         </div>
-    
-        <div class="hex" style="background: transparent;">
+
+<!-- keep blank until needed ------------------------------- !-->
+
+        <div class="hex trans" style="background: transparent;">
             
             <div class="corner-1"></div>
             <div class="corner-2"></div>
         </div>
-    
-        <div class="hex" style="background-image: url(assets/images/);">
+
+<!-- HEX ONE ------------------------------- !-->
+
+        <div class="hex trans" style="background-image: url(assets/images/);">
             <a href="#"></a>
             <div class="corner-1"></div>
             <div class="corner-2"></div>
         </div>
-    
-        <div class="hex" style="background-image: url(assets/images/);">
+
+<!-- HEX ONE ------------------------------- !-->
+
+        <div class="hex trans" style="background-image: url(assets/images/);">
             <a href="#"></a>
             <div class="corner-1"></div>
             <div class="corner-2"></div>
         </div>
-    
-        <div class="hex" style="background: transparent;">
+
+<!-- keep blank until needed ------------------------------- !-->
+
+        <div class="hex trans" style="background: transparent;">
             
             <div class="corner-1"></div>
             <div class="corner-2"></div>
         </div>
-    
-        <div class="hex" style="background-image: url(assets/images/);">
+
+<!-- HEX ONE ------------------------------- !-->
+
+        <div class="hex trans" style="background-image: url(assets/images/);">
             <a href="#"></a>
             <div class="corner-1"></div>
             <div class="corner-2"></div>
         </div>
-    
-        <div class="hex hex-gap" style="background-image: url(assets/images/);">
+
+<!-- HEX ONE ------------------------------- !-->
+
+        <div class="hex hex-gap trans" style="background-image: url(assets/images/);">
             <a href="#"></a>
             <div class="corner-1"></div>
             <div class="corner-2"></div>
         </div>
-    
-        <div class="hex" style="background: transparent;">
+
+<!-- keep blank until needed ------------------------------- !-->
+
+        <div class="hex trans" style="background: transparent;">
             
             <div class="corner-1"></div>
             <div class="corner-2"></div>
         </div>
     
     </div>
+    
     
 </body>
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>404</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+<body>
+    <div class="distortion" contenteditable>
+        <span class="distortion">404</span>
+    
+    </div>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="dist-01">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="8" result="noise" seed="0" />
+                <feConvolveMatrix in="noise" order="3" result="snoise" kernelMatrix="
+             0  -1   0
+            -1   5  -1
+             0  -1   0    
+          " />
+                <feDisplacementMap id="displacement" in="SourceGraphic" in2="snoise" scale="6" />
+            </filter>
+            <filter id="dist-02">
+                <feTurbulence id="turbulence" baseFrequency="0.2" numOctaves="8" result="noise" seed="1" />
+                <feConvolveMatrix in="noise" order="3" result="snoise" kernelMatrix="
+             0  -1   0
+            -1   5  -1
+             0  -1   0    
+          " />
+                <feDisplacementMap id="displacement" in="SourceGraphic" in2="snoise" scale="6" />
+            </filter>
+            <filter id="dist-03">
+                <feTurbulence id="turbulence" baseFrequency="0.01" numOctaves="6" result="noise" seed="2" />
+                <feConvolveMatrix in="noise" order="3" result="snoise" kernelMatrix="
+             0  -1   0
+            -1   5  -1
+             0  -1   0    
+          " />
+                <feDisplacementMap id="displacement" in="SourceGraphic" in2="snoise" scale="6" />
+            </filter>
+            <filter id="dist-04">
+                <feTurbulence id="turbulence" baseFrequency="0.01" numOctaves="6" result="noise" seed="2" type="FractalNoise" />
+                <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+            </filter>
+        </defs>
+    </svg>
+</body>
+</html>
