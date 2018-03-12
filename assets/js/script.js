@@ -97,6 +97,7 @@ function reset() {
     var pos = 0;
     var id = setInterval(frame, 1);
     function frame() {
+        clearInterval(id);
         elem.style = pos;
         elem1.style = pos;
         elem2.style = pos;
