@@ -1,12 +1,12 @@
 /* GENERAL  */
 @import 'reset';
-
+$lightblue: #148884;
 .aboutMessage {
 	color: white
 }
 .me {
-	width: 30em;
-  	height: 30em;
+	width: 40em;
+  	height: 40em;
 	background-image: url("../images/me.png");
 	position: fixed;
 	left: 0;
@@ -19,21 +19,56 @@
 	background-color: rgba(255, 255, 255, 0.425);
 	height: auto;
 }
+.main section.page1 .aboutLink {
+	color: grey;
+	position: fixed;
+	top: 50%;
+	left: 75%;
+	font-size: 2em;
+	cursor: pointer;
+}
+.main section.page1 .about {
+	text-align: right;
+	color: $lightblue;
+	position: fixed;
+	top: 45%;
+	left: 20%;
+	font-size: 1em;
+	cursor: pointer;
+}
+.main section.page1 .techLink {
+	text-align: right;
+	color: grey;
+	position: fixed;
+	top: 55%;
+	left: 75%;
+	font-size: 2em;
+	cursor: pointer;
+}
+.main section.page1 .tech {
+	text-align: left;
+	color: $lightblue;
+	position: fixed;
+	top: 60%;
+	left: 20%;
+	font-size: 1em;
+	cursor: pointer;
+}
 
 .main section.page1 h1 {
 	font-size: 10em;
 	font-family: 'Abril Fatface';
 	position: fixed;
 	top:20%;
-	left: 30%;
+	left: 20%;
 	color: grey;
 }
 .main section.page1 h2 {
 	font-size: 3em;
 	font-family: 'Abril Fatface';
 	position: fixed;
-	top: 33%;
-	left: 70%;
+	top: 36%;
+	left: 65%;
 	color: #148884;
 }
 .icon-scroll,
@@ -155,8 +190,8 @@
 #categories div p {
 	width: 90%;
 	padding-right:50px;
-	background-color: rgba(112, 155, 180, 0.8);
-	background-color: rgba(112, 155, 180, 0.8);
+	background-color: rgba(20,136,132, 0.8);
+	background-color: rgba(20,136,132, 0.8);
 	font-family: 'Raleway', sans-serif;
 	transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
 }
@@ -167,6 +202,24 @@
 	font-size: 1.5em;
 	padding-top: 100%;
 	padding-bottom: 100%;
+		a{
+			left: 25%;
+			bottom: 10%;
+			color: inherit;
+			text-decoration: underline;
+		}
+		.vikings {
+			left: 15%;
+			bottom: 10%;
+			color: inherit;
+			text-decoration: underline;
+		}
+			.mythic {
+			left: 15%;
+			bottom: 10%;
+			color: inherit;
+			text-decoration: underline;
+		}
 }
 #categories li h1:after {
 	content: '';
