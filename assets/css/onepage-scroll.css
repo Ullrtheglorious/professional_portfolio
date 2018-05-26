@@ -283,7 +283,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
     }
     
     .main section.page1 {
-      background:rgba(0, 0, 0, 0.836);
+      background-image: url("../images/wallpaper.png");
     }
     .main section.page1 h1 {
       text-align: left;
