@@ -1,36 +1,44 @@
-/* parallax background */
-.parallax { 
-	background: linear-gradient( rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.5) ), url("../images/forest.jpg"); 
-    height: 900px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+/* GENERAL  */
+@import 'reset';
+
+.aboutMessage {
+	color: white
+}
+
+
+.me {
+	width: 30em;
+  	height: 30em;
+	background-image: url("../images/me.jpg");
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-position: center;
 	background-size: cover;
+	background-repeat: no-repeat;
 }
-/* shaping backgrounds for the parallax transition */
-.transitionShapeTop {
-	margin-top: -700px;
-	width: 100%;
-	height: 700px;
-	clip-path: polygon(50% 78%, 0% 100%, 100% 100%);
-	background-color: white;
+.container-fluid {
+	background-color: rgba(255, 255, 255, 0.425);
+	height: auto;
 }
-.transitionShapeBottom {
-	margin-bottom: -700px;
-	width: 100%;
-	height: 701px;
-	clip-path: polygon(51% 21%, 0 0, 100% 0);
-	background-color:white;
+
+.mainText {
+	position: fixed;
+	left: 25%;
+	 color: rgb(30, 184, 223)
 }
-/* start of the hex styling */
+
+/* START OF THE HEX STYLING */
 * {
 	margin: 0;
 	padding: 0;
 }
 #categories {
 	overflow: hidden;
-	width: 90%;
-	margin: 0 auto;
+	width: auto;
+	padding:auto;
+	margin-left: 10%;
+	background: transparent;
 }
 .clr:after {
 	content: "";
@@ -88,7 +96,7 @@
 #categories div h1,
 #categories div p {
 	width: 90%;
-	padding: 0 5%;
+	padding-right:50px;
 	background-color: rgba(112, 155, 180, 0.8);
 	background-color: rgba(112, 155, 180, 0.8);
 	font-family: 'Raleway', sans-serif;
@@ -119,7 +127,8 @@
 	top: 110%;
 	padding-bottom: 50%;
 }
-/* HOVER EFFECT  */
+
+/* HOVER EFFECT ON HEX */
 #categories li div:hover h1 {
 	text-align: center;
 	width: 100%;
@@ -165,4 +174,25 @@
 }
 #fork:hover:before {
 	transform: translateX(0) skewX(-45deg);
+}
+
+// BEGIN MEDIA QUERIES 
+// PHONE STYLES -- SM
+@media only screen and (min-width: 200px) { 
+
+}
+
+// TABLET STYLES -- MD 
+@media only screen and (min-width: 600px) { 
+    
+}
+
+// DESKTOP STYLES -- LRG
+@media only screen and (min-width: 900px) { 
+    
+}
+
+// DESKTOP STYLES -- XL 
+@media only screen and (min-width: 1200px) { 
+    
 }
