@@ -16,9 +16,9 @@ $(document).ready(function() {
     }, 3000);
 
     $(".aboutLink").click(function(){
-        $(".about").fadeIn("slow");
+        window.location.replace('#page3Break');
     })
     $(".techLink").click(function () {
-        $(".tech").fadeIn("slow");
+        window.location.replace('#page3Break');;
     })
 })

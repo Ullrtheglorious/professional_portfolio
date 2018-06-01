@@ -26,7 +26,7 @@
     beforeMove: null,
     afterMove: null,
     loop: true,
-    responsiveFallback: false,
+    responsiveFallback: true,
     direction : 'vertical'
   };
 
@@ -234,23 +234,23 @@
 
       //end modification
       if (valForTest) {
-        $("body").addClass("disabled-onepage-scroll");
-        $(document).unbind('mousewheel DOMMouseScroll MozMousePixelScroll');
-        el.swipeEvents().unbind("swipeDown swipeUp");
-      } else {
-        if($("body").hasClass("disabled-onepage-scroll")) {
-          $("body").removeClass("disabled-onepage-scroll");
-          $("html, body, .wrapper").animate({ scrollTop: 0 }, "fast");
-        }
+      //   $("body").addClass("disabled-onepage-scroll");
+      //   $(document).unbind('mousewheel DOMMouseScroll MozMousePixelScroll');
+      //   el.swipeEvents().unbind("swipeDown swipeUp");
+      // } else {
+      //   if($("body").hasClass("disabled-onepage-scroll")) {
+      //     $("body").removeClass("disabled-onepage-scroll");
+      //     $("html, body, .wrapper").animate({ scrollTop: 0 }, "fast");
+      //   }
 
 
-        el.swipeEvents().bind("swipeDown",  function(event){
-          if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
-          el.moveUp();
-        }).bind("swipeUp", function(event){
-          if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
-          el.moveDown();
-        });
+      //   el.swipeEvents().bind("swipeDown",  function(event){
+      //     if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
+      //     el.moveUp();
+      //   }).bind("swipeUp", function(event){
+      //     if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
+      //     el.moveDown();
+      //   });
 
         $(document).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function(event) {
           event.preventDefault();

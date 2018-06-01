@@ -284,6 +284,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
     .main section.page1 {
       background-image: url("../images/wallpaper.png");
     }
+
     .main section.page1 h1 {
       text-align: left;
       padding: 0;
@@ -306,17 +307,20 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
     .main section .page_container .btns a{
       text-align: center;
     }
-    .main section.page2{
+    .main section.page2 {
+      background-image: url("../images/wallpaper.png");
+    }
+    .main section.page3{
 	  background-image: url("../images/wallpaper.png");
     }
-    .main section.page2 .page_container {
+    .main section.page3 .page_container {
       overflow: hidden;
       text-align: center;
       height: 100%;
       margin-top: -50px;
 
     }
-    .main section.page2 h1 {
+    .main section.page3 h1 {
       text-align: center;
       padding: 0;
       margin-bottom: 15px;
@@ -324,7 +328,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
       letter-spacing: -1px;
       color: white;
     }
-    .main section.page2 h2 {
+    .main section.page3 h2 {
       color: rgba(255,255,255,0.85);
       text-align: center;
       line-height: 160%;
@@ -334,24 +338,24 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
       background: rgba(0, 0, 0, 0.25);
       color: #FFF;
       }
-      .main section.page3{
+      .main section.page4{
       background-image: url("../images/wallpaper.png");
     }
-    .main section.page3 .page_container {
+    .main section.page4 .page_container {
       overflow: hidden;
       width: 700px;
       left: 0;
       background-image: url("../images/wallpaper.png");
     }
-    .main section.page3 h1 {
-      text-align: left;
+    .main section.page4 h1 {
+      text-align: center;
       padding: 0;
       margin-bottom: 0;
       font-size: 70px;
       letter-spacing: -1px;
       color: #148884;
     }
-    .main section.page3 h2 {
+    .main section.page4 h2 {
       color: grey;
       text-align: center;
       line-height: 160%;
@@ -369,7 +373,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
       height: auto;
     }
     
-    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page3 .page_container  {
+    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page4 .page_container  {
       padding: 20px;
       margin-top: 150px;
       -webkit-box-sizing: border-box;
@@ -400,9 +404,27 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
       overflow: hidden;
     }
     
-    body.disabled-onepage-scroll .main section.page3 .page_container {
+    body.disabled-onepage-scroll .main section.page4 .page_container {
       width: 90%;
       margin-left: auto;
       margin-right: auto;
       right: 0;
     }
+/* start media queries */
+/* PHONE STYLES -- SM */
+@media only screen and (min-width: 200px) { 
+
+}
+
+/* TABLET STYLES -- MD  */
+@media only screen and (min-width: 600px) {
+  
+}
+
+/* DESKTOP STYLES -- LRG */
+@media only screen and (min-width: 900px) { 
+}
+
+/* DESKTOP STYLES -- XL  */
+@media only screen and (min-width: 1200px) { 
+}

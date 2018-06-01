@@ -5,7 +5,6 @@ $lightblue: #148884;
 .aboutMessage {
 	color: white
 }
-
 .me {
 	width: 40em;
   	height: 40em;
@@ -100,7 +99,7 @@ $lightblue: #148884;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-name: scroll;
-          animation-name: scroll;
+		  animation-name: scroll;
 }
 @-webkit-keyframes scroll {
   0% {
@@ -292,11 +291,136 @@ $lightblue: #148884;
 // BEGIN MEDIA QUERIES 
 // PHONE STYLES -- SM
 @media only screen and (min-width: 200px) { 
-
+.main section.page1 h1 {
+	font-size: 6em;
+	font-family: 'Abril Fatface';
+	position: fixed;
+	top:10%;
+	left: 5px;
+	color: grey;
+}
+.main section.page1 .aboutLink {
+	color: grey;
+	position: fixed;
+	top: 60%;
+	left: 65%;
+	font-size: 0;
+	cursor: pointer;
+}
+.main section.page1 .techLink {
+	text-align: right;
+	color: grey;
+	position: fixed;
+	top: 65%;
+	left: 65%;
+	font-size: 0;
+	cursor: pointer;
+}
+.main section.page1 h2 {
+	font-size: 3em;
+	font-family: 'Abril Fatface';
+	position: fixed;
+	top: 32%;
+	left: 15%;
+	color: #148884;
+}
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 75%;
+}
+.icon-scroll:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background:  #148884;
+  margin-left: -20px;
+  top: 20px;
+  border-radius: 25px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+		  animation-name: scroll;
+		  animation-direction:reverse;
+}
+.icon-scroll {
+  width: 50px;
+  height: 100px;
+  margin-left: -5px;
+  bottom: 5%;
+  margin-top: -10px;
+  box-shadow: inset 0 0 0 1px #148884;
+  border-radius: 50px;
+}
 }
 
 // TABLET STYLES -- MD 
-@media only screen and (min-width: 600px) { 
+@media only screen and (min-width: 600px) {
+	.main section.page1 h1 {
+	font-size: 10em;
+	font-family: 'Abril Fatface';
+	position: fixed;
+	top:20%;
+	left: 20%;
+	color: grey;
+}
+.main section.page1 h2 {
+	font-size: 3em;
+	font-family: 'Abril Fatface';
+	position: fixed;
+	top: 36%;
+	left: 65%;
+	color: #148884;
+}
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+.icon-scroll {
+  width: 40px;
+  height: 70px;
+  margin-left: -5px;
+  bottom: 5%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #148884;
+  border-radius: 25px;
+}
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background:  #148884;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+		  animation-name: scroll;
+		  animation-direction: normal;
+} 
+.main section.page1 .techLink {
+	text-align: right;
+	color: grey;
+	position: fixed;
+	top: 55%;
+	left: 75%;
+	font-size: 2em;
+	cursor: pointer;
+}
+.main section.page1 .aboutLink {
+	color: grey;
+	position: fixed;
+	top: 50%;
+	left: 75%;
+	font-size: 2em;
+	cursor: pointer;
+}
     
 }
 
