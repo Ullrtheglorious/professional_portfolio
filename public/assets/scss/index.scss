@@ -302,33 +302,38 @@ $lightblue: #148884;
 	overflow: hidden;
 	width: auto;
 	padding:auto;
-	height: 600px;
+	height: 700px;
 	margin-left: 10%;
 	background: transparent;
 }
+// food
 li.hex1 {
 	position: absolute;
-	top: 49%;
+	top: 42%;
 	left: 5%;
 }
+// willy
 li.hex2 {
 	position: absolute;
-	top: 70%;
+	top: 63%;
 	left: -15%;
 }
+// swords
 li.hex3 {
 	position: absolute;
-	bottom: 20%;
+	bottom: 25%;
 	left: 3%;
 }
+// witcher
 li.hex4 {
 	position: absolute;
-	bottom: -5%;
+	bottom: 0.5%;
 	left: -36.5%;
 }
+// trees
 li.hex5 {
 	position: absolute;
-	bottom: 34.85%;
+	bottom: 38.85%;
 	left: -15%;
 }
 #categories li {
