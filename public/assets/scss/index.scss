@@ -418,6 +418,36 @@ li.hex5 {
 	visibility: hidden;
 	transform: rotate(-60deg) skewY(30deg);
 }
+// food
+li.hex1 {
+	position: absolute;
+	top: 36%;
+	left: 16.5%;
+}
+// willy
+li.hex2 {
+	position: absolute;
+	top: 0%;
+	left: -27%;
+}
+// swords
+li.hex3 {
+	position: absolute;
+	bottom: 0.2%;
+	left: 3%;
+}
+// witcher
+li.hex4 { 
+	position: absolute;
+	bottom: 0%;
+	left: 31.5%;
+}
+// trees
+li.hex5 {
+	position: absolute;
+	bottom:36%;
+	left: -12%;
+}
 
     
 }
