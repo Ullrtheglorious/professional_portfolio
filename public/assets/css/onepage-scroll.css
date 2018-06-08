@@ -361,6 +361,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   	text-align: left;
     color: #148884;
     font-size: .7em;
+    display: inline-block;
     }
     li.large {
       font-size: 2em;
@@ -370,6 +371,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   	text-align: right;
     color: #148884;
     font-size: .7em;
+    display: inline-block;
     }
     .main section.page4 .github {
       margin-top:5px;
@@ -442,7 +444,44 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
 /* start media queries */
 /* PHONE STYLES -- SM */
 @media only screen and (min-width: 200px) { 
-
+    .main section.page4 .page_container {
+      overflow: hidden;
+      width: 350px;
+      height: auto;
+      left: 0;
+      margin-left: 10px;
+      margin-right: 0 !important;
+      margin-top: -170px;
+    }
+      .main section.page4 h1 {
+      text-align: left;
+      padding: 0 !important;
+      font-size: 50px;
+      margin-top: -10px;
+      letter-spacing: -1px;
+      color: #148884;
+    }
+    .main section.page4 .frontend {
+      text-align: left;
+      color: #148884;
+      font-size: .7em;
+      width:340px;
+      float: left;
+    }
+    li.large {
+      font-size: 2em;
+      color: grey;
+    }
+    .main section.page4 .backend {
+      text-align: right;
+      color: #148884;
+      font-size: .7em;
+      margin-right: -10px;
+      width:340px;
+    }
+    .main section.page4 h2.mobileEmail {
+      padding-top: 80px;
+    }
 }
 
 /* TABLET STYLES -- MD  */
@@ -451,7 +490,42 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
 }
 
 /* DESKTOP STYLES -- LRG */
-@media only screen and (min-width: 900px) { 
+@media only screen and (min-width: 900px) {
+  .main section.page4 .page_container {
+      overflow: hidden;
+      width: 900px;
+      height: auto;
+      left: 0;
+      margin-left: 50px;
+      margin-right: 0 !important;
+      margin-top: -100px;
+    }
+    .main section.page4 h1 {
+      text-align: left;
+      padding: 0 !important;
+      font-size: 60px;
+      letter-spacing: -1px;
+      color: #148884;
+    }
+    .main section.page4 .frontend {
+  	text-align: left;
+    color: #148884;
+    font-size: .7em;
+    display: inline-block;
+    }
+    li.large {
+      font-size: 2em;
+      color: grey;
+    }
+    .main section.page4 .backend {
+  	text-align: right;
+    color: #148884;
+    font-size: .7em;
+    display: inline-block;
+    } 
+    .main section.page4 h2.mobileEmail {
+      padding-top: 40px;
+    }
 }
 
 /* DESKTOP STYLES -- XL  */
