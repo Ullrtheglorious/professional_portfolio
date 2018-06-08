@@ -452,13 +452,13 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
       margin-left: 10px;
       margin-right: 0 !important;
       margin-top: -160px;
-      margin-bottom: 30px;
     }
       .main section.page4 h1 {
       text-align: left;
       padding: 0 !important;
       font-size: 50px;
       margin-top: -10px;
+      margin-bottom: -20px;
       letter-spacing: -1px;
       color: #148884;
     }
