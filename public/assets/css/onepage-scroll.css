@@ -302,7 +302,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
       clear: both;
       float: left;
       text-align: center;
-      width: 435px;
+      width: 375px;
     }
     .main section .page_container .btns a{
       text-align: center;
@@ -446,7 +446,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
 @media only screen and (min-width: 200px) { 
     .main section.page4 .page_container {
       overflow: hidden;
-      width: 350px;
+      width: 375px;
       height: auto;
       left: 0;
       margin-left: 10px;
@@ -487,6 +487,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
       overflow: hidden;
       text-align: center;
       height: 100%;
+      width:375px;
       margin-top: -120px;
 
     }
