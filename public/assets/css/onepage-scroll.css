@@ -449,7 +449,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
       width: 375px;
       height: auto;
       left: 0;
-      margin-left: 10px;
+      margin-left: 5px;
       margin-right: 0 !important;
       margin-top: -160px;
     }
