@@ -451,7 +451,8 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
       left: 0;
       margin-left: 10px;
       margin-right: 0 !important;
-      margin-top: -170px;
+      margin-top: -160px;
+      margin-bottom: 30px;
     }
       .main section.page4 h1 {
       text-align: left;
