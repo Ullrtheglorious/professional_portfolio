@@ -495,14 +495,22 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
 
 /* TABLET STYLES -- MD  */
 @media only screen and (min-width: 600px) {
-  
+    .main section.page4 .page_container {
+      overflow: hidden;
+      width: 1200px !important;
+      height: auto;
+      left: 0;
+      margin-left: 5px;
+      margin-right: 0 !important;
+      margin-top: -160px;
+    }  
 }
 
 /* DESKTOP STYLES -- LRG */
 @media only screen and (min-width: 900px) {
   .main section.page4 .page_container {
       overflow: hidden;
-      width: 900px;
+      width: 1200px;
       height: auto;
       left: 0;
       margin-left: 50px;
@@ -535,12 +543,11 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
     .main section.page4 h2.mobileEmail {
       padding-top: 40px;
     }
-        .main section.page3 .page_container {
+    .main section.page3 .page_container {
       overflow: hidden;
       text-align: center;
       height: 100%;
       margin-top: -50px;
-
     }
 }
 
